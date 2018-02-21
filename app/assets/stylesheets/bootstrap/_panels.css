@@ -29,7 +29,7 @@
   }
 }
 
-// Within heading, strip any `h*` tag of its default margins for spacing.
+/*// Within heading, strip any `h*` tag of its default margins for spacing.*/
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -45,7 +45,7 @@
   }
 }
 
-// Optional footer (stays gray in every modifier class)
+/*// Optional footer (stays gray in every modifier class)*/
 .panel-footer {
   padding: $panel-footer-padding;
   background-color: $panel-footer-bg;
@@ -54,10 +54,10 @@
 }
 
 
-// List groups in panels
+/*// List groups in panels
 //
 // By default, space out list group content from panel headings to account for
-// any kind of custom content between the two.
+// any kind of custom content between the two.*/
 
 .panel {
   > .list-group,
@@ -69,7 +69,7 @@
       border-radius: 0;
     }
 
-    // Add border top radius for first one
+    /*// Add border top radius for first one*/
     &:first-child {
       .list-group-item:first-child {
         border-top: 0;
@@ -77,7 +77,7 @@
       }
     }
 
-    // Add border bottom radius for last one
+   /* // Add border bottom radius for last one*/
     &:last-child {
       .list-group-item:last-child {
         border-bottom: 0;
@@ -91,7 +91,7 @@
     }
   }
 }
-// Collapse space between when there's no additional content.
+/*// Collapse space between when there's no additional content.*/
 .panel-heading + .list-group {
   .list-group-item:first-child {
     border-top-width: 0;
@@ -101,10 +101,10 @@
   border-top-width: 0;
 }
 
-// Tables in panels
+/*// Tables in panels
 //
 // Place a non-bordered `.table` within a panel (not within a `.panel-body`) and
-// watch it go full width.
+// watch it go full width.*/
 
 .panel {
   > .table,
@@ -117,7 +117,7 @@
       padding-right: $panel-body-padding;
     }
   }
-  // Add border top radius for first one
+/*  // Add border top radius for first one*/
   > .table:first-child,
   > .table-responsive:first-child > .table:first-child {
     @include border-top-radius(($panel-border-radius - 1));
@@ -139,7 +139,7 @@
       }
     }
   }
-  // Add border bottom radius for last one
+/*  // Add border bottom radius for last one*/
   > .table:last-child,
   > .table-responsive:last-child > .table:last-child {
     @include border-bottom-radius(($panel-border-radius - 1));
@@ -214,15 +214,15 @@
 }
 
 
-// Collapsable panels (aka, accordion)
+/*// Collapsable panels (aka, accordion)
 //
 // Wrap a series of panels in `.panel-group` to turn them into an accordion with
-// the help of our collapse JavaScript plugin.
+// the help of our collapse JavaScript plugin.*/
 
 .panel-group {
   margin-bottom: $line-height-computed;
 
-  // Tighten up margin so it's only between panels
+/*  // Tighten up margin so it's only between panels*/
   .panel {
     margin-bottom: 0;
     border-radius: $panel-border-radius;
